@@ -1,0 +1,64 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+  width: 50vh;
+  margin: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+header .header-img {
+  height: 250px;
+  width: 450px;
+  margin: 20px;
+}
+
+header nav {
+  display: none;
+}
+
+header .fa {
+  margin: 20px;
+}
+
+main {
+  display: block;
+}
+
+main .hero-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+main .hero-image img {
+  width: 430px;
+  position: relative;
+  right: -30%;
+}
+
+main .hero-image .hero-text {
+  position: relative;
+}
+
+main .free-nft {
+  background-image: url(bg.svg);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 50px;
+}
+/*# sourceMappingURL=style.css.map */
