@@ -428,7 +428,7 @@ footer .last-footer .launch {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 30px;
+    padding-top: 29px;
   }
   footer .footer-nav .an .g, footer .footer-nav .cn .g {
     display: unset;
