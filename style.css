@@ -1,6 +1,5 @@
-body {
+body, body * {
   font-family: 'Fira Sans', sans-serif;
-  width: 50vh;
   margin: 0;
 }
 
@@ -26,30 +25,65 @@ header nav {
 
 header .fa {
   margin: 20px;
+  font-size: 38px;
+  color: #727171;
 }
 
-main {
-  display: block;
+header .fa:hover {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  color: #f41fd4;
 }
 
-main .hero-image {
+main .hero .hero-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-bottom: 20px;
 }
 
-main .hero-image img {
-  width: 430px;
+main .hero .hero-image img {
+  width: 330px;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
-  right: -30%;
+  left: 20%;
 }
 
-main .hero-image .hero-text {
-  position: relative;
+main .hero .hero-image .hero-text {
+  margin-left: 24px;
+}
+
+main .hero .hero-image .hero-text h3 {
+  color: #f41fd4;
+}
+
+main .hero .hero-image .hero-text h1 {
+  font-size: 38px;
+  margin: 20px 0;
+}
+
+main .hero .hero-image .hero-text div {
+  color: #727171;
+  margin: 20px 0;
+}
+
+main .hero .hero-image .hero-text button {
+  background-color: transparent;
+  font-size: 16px;
+  padding: 15px 28px;
+  border-radius: 40px;
+  margin: 24px;
+  width: 140px;
+  height: 50px;
+  font-weight: 500;
+}
+
+main .hero .hero-image .hero-text button:hover {
+  color: #f41fd4;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border: 1px solid #f41fd4;
 }
 
 main .free-nft {
@@ -58,7 +92,360 @@ main .free-nft {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
   padding: 50px;
+  text-align: left;
+  margin: 0;
+}
+
+main .free-nft .b-text {
+  font-size: 38px;
+  font-weight: 500;
+  margin-top: 80px;
+}
+
+main .free-nft p {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+main .companies {
+  display: block;
+  padding: 20px;
+}
+
+main .companies .opendoor {
+  display: none;
+}
+
+main .companies .boomerang {
+  margin-right: 40px;
+}
+
+main .companies .qrco {
+  margin-right: 120px;
+}
+
+main .auction {
+  margin: 20px;
+}
+
+main .auction .opensea-link h2 {
+  font-size: 38px;
+  width: 350px;
+}
+
+main .auction .opensea-link p {
+  margin: 20px 0;
+  color: #727171;
+}
+
+main .auction .opensea-link p a {
+  color: #727171;
+}
+
+main .auction .opensea-link p a:hover {
+  color: #f41fd4;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+main .auction .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+main .auction .cards .card {
+  margin: 20px;
+  background-color: lightgrey;
+  border-radius: 16px;
+}
+
+main .auction .cards .card .card-text {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .auction .cards .card .gloop {
+  color: orange;
+  font-size: 12px;
+}
+
+main .auction .cards .card .product-name {
+  color: black;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+main .auction .cards .card .s {
+  font-size: 12px;
+}
+
+main .auction .cards .card .pyramid {
+  width: 18px;
+  height: 18px;
+}
+
+main .auction .cards .card .bid {
+  text-align: right;
+}
+
+footer {
+  margin: 0 20px;
+}
+
+footer .upper-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 2px solid lightgrey;
+  border-bottom: 2px solid lightgrey;
+}
+
+footer .upper-footer h3 {
+  color: #f41fd4;
+  font-weight: 500;
+  padding-bottom: 20px;
+  padding-top: 80px;
+}
+
+footer .upper-footer h2 {
+  font-size: 42px;
+  font-weight: 700;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+footer .upper-footer .text-d {
+  color: #727171;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+footer .upper-footer button {
+  background-color: transparent;
+  font-size: 16px;
+  padding: 15px 28px;
+  border-radius: 40px;
+  margin: 24px;
+  width: 140px;
+  height: 50px;
+  font-weight: 500;
+}
+
+footer .upper-footer button:hover {
+  color: #f41fd4;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border: 1px solid #f41fd4;
+}
+
+footer .upper-footer .girl {
+  position: relative;
+  margin-top: 120px;
+  height: 80%;
+}
+
+footer .lower-footer {
+  margin: 50px 20px;
+}
+
+footer .lower-footer img {
+  margin-bottom: 30px;
+}
+
+footer .lower-footer p {
+  color: #727171;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+footer .lower-footer .social {
+  margin-top: 20px;
+  font-size: 20px;
+  padding-bottom: 28px;
+}
+
+footer .lower-footer i {
+  padding-right: 16px;
+  color: #727171;
+}
+
+footer .lower-footer i:hover {
+  color: #f41fd4;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+footer .lower-footer .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .lower-footer .footer-nav p {
+  color: #727171;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+footer .lower-footer .footer-nav .group {
+  display: block;
+  margin-right: 90px;
+  padding-bottom: 20px;
+}
+
+footer .lower-footer .footer-nav .g {
+  display: none;
+}
+
+footer .lower-footer .footer-nav div a {
+  color: #727171;
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+
+footer .lower-footer .footer-nav div a:hover {
+  color: #f41fd4;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+footer .last-footer {
+  color: lightgrey;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+footer .last-footer .launch {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-logo {
+    height: 100px;
+    width: 150px;
+  }
+  header .fa {
+    display: none;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+  }
+  header nav a {
+    padding: 16px;
+    text-decoration: none;
+    color: black;
+  }
+  header nav .signup {
+    color: #f41fd4;
+  }
+  header nav a:hover {
+    color: #f41fd4;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  header nav .signup:hover {
+    color: black;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  main .hero .hero-image {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .hero .hero-image img {
+    left: 0%;
+  }
+  main .hero .free-nft {
+    margin: 38px;
+    border-radius: 14px;
+  }
+  main .hero .companies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .hero .companies img {
+    width: 120px;
+    height: 80px;
+    margin-right: 40px;
+    padding-left: 20px;
+  }
+  main .hero .companies .opendoor {
+    display: unset;
+  }
+  main .hero .companies .boomerang {
+    margin-right: unset;
+  }
+  main .hero .companies .qrco {
+    margin-right: unset;
+  }
+  main .auction .opensea-link .cards {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .upper-footer h2 {
+    border: none;
+  }
+  footer .upper-footer .text-d {
+    width: 60%;
+  }
+  footer .upper-footer .girl {
+    margin-left: 150px;
+  }
+  footer .lower-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer-nav .an, footer .footer-nav .cn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 30px;
+  }
+  footer .footer-nav .an .g, footer .footer-nav .cn .g {
+    display: unset;
+  }
+  footer .footer-nav .an .f, footer .footer-nav .cn .f {
+    display: none;
+  }
+  footer .last-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .last-footer .launch {
+    display: unset;
+  }
 }
 /*# sourceMappingURL=style.css.map */

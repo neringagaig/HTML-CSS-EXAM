@@ -1,6 +1,20 @@
-body {
+$fontsize1: 12px;
+$fontsize2: 16px;
+$fontsize3: 24px;
+$fontsize4: 38px;
+$fontsize5: 42px;
+$fontsize6: 20px;
+$fontcolor1: rgb(114, 113, 113);
+$fontcolor2: rgb(244, 31, 212);
+$fontcolor3: orange;
+$fontcolor4: black;
+$backgroundcolor1: lightgrey;
+$fontstrong1: 300;
+$fontstrong2: 500;
+$fontstrong3: 700;
+
+body, body * {
     font-family: 'Fira Sans', sans-serif;
-    width: 50vh;
     margin: 0;
 }
 header {
@@ -18,23 +32,57 @@ header {
     }
     .fa {
         margin: 20px;
+        font-size: $fontsize4;
+        color: $fontcolor1;
+    }
+    .fa:hover {
+        transition: 500ms;
+        color: $fontcolor2;
     }
 }
 main {
-    display: block;
+    .hero {
+        .hero-image {
+            display: flex;
+            padding-bottom: 20px;
 
-    .hero-image {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 20px;
+            img {
+                width: 330px;
+                object-fit: cover;
+                position: relative;
+                left: 20%;
+            }
+            .hero-text {
+                margin-left: 24px;
+                h3 {
+                    color: $fontcolor2;
+                }
+                h1 {
+                    font-size: $fontsize4;
+                margin: 20px 0;
 
-        img {
-            width: 430px;
-            position:relative;
-            right: -30%;
-        }
-        .hero-text {
-            position: relative;
+            }
+            div {
+                color: $fontcolor1;
+                margin: 20px 0;
+            }
+            button {
+                background-color: transparent;
+                font-size: $fontsize2;
+                padding: 15px 28px;
+                border-radius: 40px;
+                margin: 24px;
+                width: 140px;
+                height: 50px;
+                font-weight: $fontstrong2;
+            }
+            button:hover {
+                color: $fontcolor2;
+                transition: 500ms;
+                border: 1px solid $fontcolor2;
+            }
+            
+            }
         }
     }
     .free-nft {
@@ -43,7 +91,310 @@ main {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 100%;
         padding: 50px;
+        text-align: left;
+        margin: 0;
+
+        .b-text {
+            font-size: $fontsize4;
+            font-weight: $fontstrong2;
+            margin-top: 80px;
+        }
+        p {
+            margin-top: 20px;
+            font-weight: $fontstrong2;
+            font-size: $fontsize2;
+        }
+    }
+    .companies {
+        display: block;
+        padding: 20px;
+        .opendoor {
+            display: none;
+        }
+        .boomerang{
+            margin-right: 40px;
+        }
+        .qrco {
+            margin-right: 120px;
+        }
+    }
+    .auction {
+        margin: 20px;
+        .opensea-link {
+            h2 {
+                font-size: $fontsize4;
+                width: 350px;
+            }
+            p {
+                margin: 20px 0;
+                color: $fontcolor1;
+
+                a {
+                    color: $fontcolor1;
+                }
+                a:hover {
+                    color: $fontcolor2;
+                    transition: 500ms;
+                }
+            }
+        }
+        .cards {
+            display: flex;
+            margin-bottom: 50px;
+
+            .card {
+                margin: 20px;
+                background-color: $backgroundcolor1;
+                border-radius: 16px;
+                .card-text {
+                    padding: 15px;
+                    display: flex;
+                    justify-content:space-around;
+                }
+                .gloop {
+                    color:$fontcolor3;
+                    font-size: $fontsize1;
+                }
+                .product-name {
+                    color: $fontcolor4;
+                    font-weight: $fontstrong2;
+                    font-size: $fontsize3;
+                }
+                .s {
+                    font-size: $fontsize1;
+                }
+                .pyramid {
+                    width:18px;
+                    height: 18px;
+                }
+                .bid {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+footer {
+    margin: 0 20px;
+
+    .upper-footer {
+        display: flex;
+        border-top: 2px solid $backgroundcolor1;
+        border-bottom: 2px solid $backgroundcolor1;
+        h3 {
+            color: $fontcolor2;
+            font-weight: $fontstrong2;
+            padding-bottom: 20px;
+            padding-top:80px;
+        }
+        h2 {
+            font-size: $fontsize5;
+            font-weight: $fontstrong3;
+            border-bottom: 1px solid $backgroundcolor1;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+        .text-d {
+            color: $fontcolor1;
+            font-size: $fontsize6;
+            padding-bottom: 30px;
+        }
+        button {
+            background-color: transparent;
+            font-size: $fontsize2;
+            padding: 15px 28px;
+            border-radius: 40px;
+            margin: 24px;
+            width: 140px;
+            height: 50px;
+            font-weight: $fontstrong2;
+        }
+        button:hover {
+            color: $fontcolor2;
+            transition: 500ms;
+            border: 1px solid $fontcolor2;
+        }
+        .girl {
+            position:relative;
+            margin-top: 120px;
+            height: 80%;
+        }
+    }
+    .lower-footer {
+        margin: 50px 20px;
+
+        img {
+            margin-bottom: 30px;
+        }
+        p {
+            color: $fontcolor1;
+            font-size: $fontsize3;
+            font-weight: $fontstrong2;
+        }
+        .social {
+            margin-top: 20px;
+            font-size: $fontsize6;
+            padding-bottom: 28px;
+        }
+        i {
+            padding-right: 16px;
+            color: $fontcolor1;
+        }
+        i:hover {
+            color: $fontcolor2;
+            transition: 500ms;
+        }
+        .footer-nav {
+            display: flex;
+
+            p {
+                color: $fontcolor1;
+                font-size: $fontsize2;
+                font-weight: $fontstrong2;
+                margin-bottom: 24px;
+            }
+            .group {
+                display:block;
+                margin-right: 90px;
+                padding-bottom: 20px;
+            }
+            .g {
+                display: none;
+            }
+            div a {
+                color: $fontcolor1;
+                text-decoration: none;
+                margin-bottom: 18px;
+            }
+            div a:hover {
+                color: $fontcolor2;
+                transition: 500ms;
+            }
+        }
+        
+    }
+    .last-footer {
+        color: $backgroundcolor1;
+        font-size: $fontsize6;
+        margin-bottom: 50px;
+        .launch {
+            display: none;
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    header {
+        align-items: center;
+        .header-logo {
+            height: 100px;
+            width: 150px;
+        }
+        .fa {
+            display: none;
+        }
+        nav {
+            display: flex;
+            padding: 20px;
+
+            a {
+                padding: 16px;
+                text-decoration: none;
+                color: $fontcolor4;
+
+                
+            }
+            .signup {
+                color:$fontcolor2;
+            }
+            a:hover {
+                color:$fontcolor2;
+                transition: 500ms;
+            }
+            .signup:hover {
+                color:$fontcolor4;
+                transition: 500ms;
+            }
+        }
+    }
+    main {
+        .hero {
+            .hero-image {
+                justify-content: space-between;
+                img {
+                    left:0%;
+                }
+            }
+            .free-nft {
+                margin: 38px;
+                border-radius: 14px;
+            }
+            .companies {
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    width: 120px;
+                    height: 80px;
+                    margin-right: 40px;
+                    padding-left: 20px;
+                }
+
+                .opendoor {
+                    display:unset;
+                }
+                .boomerang{
+                    margin-right:unset;
+                }
+                .qrco {
+                    margin-right:unset;
+                }
+            }
+        }
+        .auction {
+            .opensea-link {
+                .cards {
+                    width: 100%;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+    footer {
+        .upper-footer {
+            h2 {
+                border: none;
+            }
+            .text-d {
+                width: 60%;
+            }
+            .girl {
+                margin-left: 150px;
+            }
+        }
+        .lower-footer {
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-nav {
+            .an, .cn {
+                display: flex;
+                .g {
+                display: unset;
+                }
+                .f {
+                display: none;
+                }
+                padding-top: 30px;
+            }
+            
+        }
+        .last-footer {
+            display: flex;
+            justify-content: space-between;
+            .launch {
+                display: unset;
+            }
+        }
     }
 }
